@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: rgb(219, 226, 226);
+}
+.row{
+	background: white;
+	border-radius: 30px;
+	border-style: solid;
+}
+img{
+	border-radius: 30px;
+}
+.container{
+	width: 70%;
+	height: 30%;
+}
+.btnLogin{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 100px;
+	background-color: #00b3b3;
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+}
