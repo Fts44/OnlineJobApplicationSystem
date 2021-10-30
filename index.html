@@ -9,7 +9,59 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Login</title>
-
+    <style type="text/css">
+      .container{
+        border-style: none;
+      }
+      .row{
+        background: white;
+        border-style: solid;
+        border-radius: 30px;
+      }
+      img{
+        border-top-left-radius: 29px;
+        border-bottom-left-radius: 29px;
+      }
+      #loginLogo{
+        position: relative;
+        display: flex;
+      }
+      .img-fluid{
+        position: relative;
+      }
+      .container{
+        width: 70%;
+        height: 30%;
+      }
+      #btnLogin{
+        border: none;
+        outline: none;
+        height: 40px;
+        width: 100px;
+        background-color: #48b4e0;
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      @media screen and (max-width: 500px){
+        #loginLogo{
+          flex-direction: column;
+          max-width: 300px;
+          height: auto;
+        }
+        .img-fluid{
+          width: 100%;
+          height: 220px;
+        }
+      }
+      @media screen and (max-width: 1000px){
+        img{
+          border-bottom-left-radius: 0px;
+          border-top-left-radius: 29px;
+          border-top-right-radius: 29px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -17,16 +69,16 @@
   	<section class="loginForm my-5 mx-5 py-5">
   		<div class="container">
   			<div class="row g-0">
-  				<div class="col-lg-5">
-  					<img src="images/administrator.png" class="img-fluid" alt="Administrator Logo">
+  				<div class="col-lg-5" id="loginLogo">
+  					<img src="images/administrator.png" class="img-fluid" alt="Administrator Logo"> 
   				</div>
-  				<div class="col-lg-7 px-5 pt-5">
-  					<p style="font-size: 40px">Online Job Finder</p>
+  				<div class="col-lg-7 px-5 pt-5" id="colForm">
+  					<p class="heading">Online Job Finder</p>
   					<p><i>We find jobs for you...</i></p>
   					<form class="">
   						<div class="form-row">
   							<div class="col-lg-7">
-  								<input type="email" placeholder="User ID" class="form-control my-3">
+  								<input type="email" placeholder="Username" class="form-control my-3">
   							</div>
   						</div>
   						<div class="form-row">
@@ -36,12 +88,11 @@
   						</div>
   						<div class="form-row">
   							<div class="col-lg-7">
-  								<button type="button" class="btnLogin my-2">Login</button>
+  								<button type="button" class="btn my-2" id="btnLogin">Login</button>
   							</div>
   						</div>
   						<a href="#" class="my-2">Forgot Password?</a>
-  						<p class="my-2">Don't Have an Account?</p>
-						<p class="my-2"><a href="#">Register Here</a></p>	
+  						<p class="my-2">Don't Have an Account? <a href="registration.html">Register Here</a></p>					
   					</form>
   				</div>
   			</div>
