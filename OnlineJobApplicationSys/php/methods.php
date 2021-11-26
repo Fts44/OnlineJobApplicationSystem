@@ -23,16 +23,16 @@
             $b = explode(')', $a[1]);
             return $b[0];
 		}
-
+		//used for inserting
 		function isNULL($value){
-			if(empty($value) || $value == 0){
+			if($value == '' || $value == '0'){
 		      return 'NULL';
 		    }
 		    else{
 		      return $value;
 		    }
 		}
-
+		//used for filtering records
 		function notNULL($var, $varname){
 			if($var == "" || $var == "0"){
 				return $varname." IS NOT NULL";

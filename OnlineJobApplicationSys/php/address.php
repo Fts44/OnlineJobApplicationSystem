@@ -75,6 +75,9 @@
 			xmlhttp.send(null);		
 			document.getElementById(Brgy).innerHTML=xmlhttp.responseText;
 		}
+		function passText(text, destinationElement){
+			document.getElementById(destinationElement).innerHTML = text;
+		}
 	</script>
 	<div class="container">
 	<style type="text/css">
@@ -200,5 +203,10 @@
 	    echo "<a href='address.php?page=".$next."'><button class='btn btn-dark' style='margin-left: 10px;'>"."next"."</button></a>";
 	?>
 	</div>
+	<div id='from' style="border: solid;">Ako ay ilipat mo</div>
+	<br>
+	<div id='destination' style="border: groove;">Dine ang lipat</div>
+	<br>
+	<button onclick="passText('from','destination')">Lipate!</button>
 </body>
 </html>

@@ -240,6 +240,20 @@ body{
 #CreateJP textarea,#CreateJP .modal-dialog .modal-body form table tr td input,#CreateJP .modal-dialog .modal-body form table tr td select{ 
   width: 250px;
 }
+.swal-modal {
+  background-color: #E4E9F7;
+  color: white;
+}
+.swal-text {
+  color: black;
+  font-size: 25px;
+  align-self: center;
+}
+.swal-button {
+  background-color: rgb(41, 43, 44);
+  color: white;
+  width: 90px;
+}
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
